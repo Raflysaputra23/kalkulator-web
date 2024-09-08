@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator Raf</title>
+	<link rel="icon" href="./img/Calculator.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- ICON -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<div class="container">
+		<div id="calculator">
+			<div class="input-calculator">
+				<input type="text" disabled value="" placeholder="0">
+			</div>
+			<div class="btn-calculator">
+				<div class="btn-on">
+					<button type="button" class="clear width-btn"><i class='bx bx-trash'></i></button>
+					<div id="jam-digital">00:00:00 AM</div>
+					<button type="button" class="i/o off width-btn"><i class='bx bx-power-off'></i></button>
+				</div>
+				<div class="box-calc">
+					<div class="numerik">
+						<button type="button" disabled="true">1</button>
+						<button type="button" disabled="true">2</button>
+						<button type="button" disabled="true">3</button>
+						<button type="button" disabled="true">4</button>
+						<button type="button" disabled="true">5</button>
+						<button type="button" disabled="true">6</button>
+						<button type="button" disabled="true">7</button>
+						<button type="button" disabled="true">8</button>
+						<button type="button" disabled="true">9</button>
+					</div>
+					<div class="operator">
+						<button type="button" class="tambah" disabled="true">+</button>
+						<button type="button" class="kali" disabled="true">*</button>
+						<button type="button" class="bagi" disabled="true">/</button>
+						<button type="button" class="kurang" disabled="true">-</button>
+						<button type="button" class="samadengan" disabled="true">=</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+:root {
+	--backgroundColorMain: #ddd;
+	--fontMain : 'Poppins';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+@font-face {
+	font-family: Poppins;
+	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: Tillana;
+	src: url('../fonts/Tillana/Tillana-Regular.ttf');
+}
+
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--backgroundColorMain);
+}
+
+.container {
+	background-color: #6C4E35;
+	font-family: 'Poppins', sans-serif;
+	border-radius: .5rem;
+	width: 20rem;
+	padding: 1rem .8rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-calculator input {
+	font-family: inherit;
+	text-align: right;
+	width: 100%;
+	padding: 8px 8px 0px 8px;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	height: 4rem;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.input-calculator input::placeholder {
+	color: white;
+}
+
+.btn-calculator {
+	margin: 1.5rem 0 0 0;
+}
+
+.btn-calculator .btn-on {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 .8rem 0;
+}
+
+.btn-calculator .btn-on h1 {
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Tillana', sans-serif;
+	text-shadow: -1px 1px 2px #000;
+}
+
+.box-calc {
+	height: 10rem;
+	display: flex;
+	gap: 15px;
+}
+
+.box-calc .numerik {
+	gap: 8px;
+	flex-basis: 65%;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.box-calc .operator {
+	flex-basis: 35%;
+	gap: 8px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: 'tambah kali' 
+						 'bagi kurang' 
+						 'samadengan samadengan';
+}
+
+.tambah {
+	grid-area: tambah;
+}
+
+.kali {
+	grid-area: kali;
+}
+
+.bagi {
+	grid-area: bagi;
+}
+
+.kurang {
+	grid-area: kurang;
+}
+
+.samadengan {
+	grid-area: samadengan;
+}
+
+#jam-digital {
+	color: #fff;
+	font-size: 1.2rem;
+	background-color: rgba(239, 239, 239, 0.3);
+	box-shadow:  -2px 2px 1px 1px rgba(0, 0, 0, 0.16);
+	width: 8em;
+	text-align: center;
+	padding: .4rem 0;
+	border-radius: 8px;
+	font-family: 'Tillana', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+	font-family: inherit;
+	border: none;
+	box-shadow:  -2px 2px 1px 1px rgba(0, 0, 0, 0.16);
+	border-radius: 6px;
+	font-size: 1.3rem;
+	background-color: rgba(239, 239, 239, 0.3);
+	color: #fff;
+	cursor: pointer;
+}
+
+button:active {
+	box-shadow: inset -1px 1px 2px 1px rgba(0, 0, 0, .5) !important;
+}
+
+
+
+@layer utilities {
+	.on {
+		background-color: #16F50C !important;
+		box-shadow: inset -1px 1px 2px 1px rgba(0, 0, 0, .5) !important;
+	}
+	.off {
+		background-color: #FF0000 !important;
+	}
+
+	.clear {
+		background-color: #E4FF00 !important;
+		color: #000 !important;
+	}
+
+	.width-btn {
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+
+	
+}
+
+
+}
+
+
